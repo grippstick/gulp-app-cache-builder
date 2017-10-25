@@ -1,36 +1,36 @@
-const fs = require('fs');
-const cheerio = require('cheerio');
-const through = require('through2');
-const gulp = require('gulp');
-const rename = require('gulp-rename');
-const gutil = require('gulp-util');
+var fs = require('fs');
+var cheerio = require('cheerio');
+var through = require('through2');
+var gulp = require('gulp');
+var rename = require('gulp-rename');
+var gutil = require('gulp-util');
 
-const PluginError = gutil.PluginError;
+var PluginError = gutil.PluginError;
 
 
 // Consts
-const PLUGIN_NAME = 'gulp-app-cache-builder';
+var PLUGIN_NAME = 'gulp-app-cache-builder';
 
 function buildAppCache(options) {
-    let excludeString = options.ExcludeString;
-    let projectFile = options.ProjectFile;
+    var excludeString = options.ExcludeString;
+    var projectFile = options.ProjectFile;
 
-    let excludes = excludeString.split(",");
-    let contentNames = [];
-    let newLine = "\n";
-    let now = new Date();
+    var excludes = excludeString.split(",");
+    var contentNames = [];
+    var newLine = "\n";
+    var now = new Date();
 
     return through.obj(function (file, encoding, done) {
 
-        let $ = cheerio.load(file.contents);
+        var $ = cheerio.load(file.contents);
 
         $('Content').each(function (index, contentNode) {
 
-            let fileName = "/" + contentNode.attribs["include"].replace(/\\/g, "\/");
-            let exclude = false;
+            var fileName = "/" + contentNode.attribs["include"].replace(/\\/g, "\/");
+            var exclude = false;
 
-            for (let i = 0; i < excludes.length; i++) {
-                let ext = excludes[i].toLowerCase();
+            for (var i = 0; i < excludes.length; i++) {
+                var ext = excludes[i].toLowerCase();
                 if (ext.startsWith(".")) {
                     if (fileName.toLowerCase().endsWith(ext)) {
                         exclude = true;
