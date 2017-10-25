@@ -1,0 +1,64 @@
+{
+  "_from": "gulp-app-cache-builder@*",
+  "_id": "gulp-app-cache-builder@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-DtTvaFaNoe+ILpmJF8QJYiU1r+LEnNcGtSRa2UnWt4NSaR0pasgC+669d/H6IZn6Pqf2vcXw7LqmGvJztAID9Q==",
+  "_location": "/gulp-app-cache-builder",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "gulp-app-cache-builder@*",
+    "name": "gulp-app-cache-builder",
+    "escapedName": "gulp-app-cache-builder",
+    "rawSpec": "*",
+    "saveSpec": null,
+    "fetchSpec": "*"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gulp-app-cache-builder/-/gulp-app-cache-builder-1.0.0.tgz",
+  "_shasum": "0da5277c68953e7b5c1fbf8a48e5764f31579412",
+  "_spec": "gulp-app-cache-builder@*",
+  "_where": "C:\\Development\\GulpTest",
+  "author": {
+    "name": "Joshua Grippo",
+    "email": "joshua.grippo@radolo.com",
+    "url": "http://radolo.com"
+  },
+  "bugs": {
+    "url": "https://github.com/grippstick/gulp-app-cache-builder/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cheerio": "*",
+    "fs": "*",
+    "gulp": "*",
+    "gulp-rename": "*",
+    "gulp-util": "*",
+    "through2": "*"
+  },
+  "deprecated": false,
+  "description": "Inspects a C# project file and generates an application cache manifest for included items. It allows the use of an ExcludeString to filter included items that are not needed in the manifest.",
+  "homepage": "https://github.com/grippstick/gulp-app-cache-builder#readme",
+  "keywords": [
+    "gulp",
+    "c#",
+    "application",
+    "cache",
+    "appcache",
+    "manifest"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "gulp-app-cache-builder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grippstick/gulp-app-cache-builder.git"
+  },
+  "scripts": {
+    "test": "index.js"
+  },
+  "version": "1.0.1"
+}
