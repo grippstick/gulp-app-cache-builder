@@ -59,8 +59,6 @@ function buildAppCache(options) {
 
         output += "CACHE:" + newLine;
 
-        output += "/" + newLine;
-
         //add the cache section
         contentNames.forEach(function (name, index) {
             output += name + newLine;
