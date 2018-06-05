@@ -1,6 +1,6 @@
 {
   "_from": "gulp-app-cache-builder@*",
-  "_id": "gulp-app-cache-builder@1.0.1",
+  "_id": "gulp-app-cache-builder@1.0.3",
   "_inBundle": false,
   "_integrity": "sha512-DtTvaFaNoe+ILpmJF8QJYiU1r+LEnNcGtSRa2UnWt4NSaR0pasgC+669d/H6IZn6Pqf2vcXw7LqmGvJztAID9Q==",
   "_location": "/gulp-app-cache-builder",
@@ -60,5 +60,5 @@
   "scripts": {
     "test": "index.js"
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
